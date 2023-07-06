@@ -15,15 +15,15 @@
     "commands": [
       {
         "command": "hackathon-gpt.review",
-        "title": "Hello World"
+        "title": "Review Code"
       }
     ],
     "menus": {
       "editor/context": [
         {
           "command": "hackathon-gpt.review",
-          "group": "navigation",
-          "when": "editorTextFocus"
+          "group": "commands",
+          "when": "editorTextFocus && editorHasSelection"
         }
       ]
     }
