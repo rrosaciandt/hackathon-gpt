@@ -27,12 +27,14 @@
         }
       ]
     },
-    "keybindings": [{
-      "command": "hackathon-gpt.review",
-      "key": "ctrl+shift+,",
-      "mac": "cmd+shift+,",
-      "when": "editorTextFocus && editorHasSelection"
-    }]
+    "keybindings": [
+      {
+        "command": "hackathon-gpt.review",
+        "key": "ctrl+shift+,",
+        "mac": "cmd+shift+,",
+        "when": "editorTextFocus && editorHasSelection"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
@@ -47,6 +49,7 @@
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
+    "@types/marked": "^5.0.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "20.2.5",
     "@types/vscode": "^1.79.0",
@@ -60,5 +63,10 @@
     "typescript": "^5.1.6",
     "webpack": "^5.85.0",
     "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "@azure/openai": "^1.0.0-beta.2",
+    "axios": "^1.4.0",
+    "marked": "^5.1.0"
   }
 }
