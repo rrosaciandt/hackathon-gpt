@@ -26,7 +26,13 @@
           "when": "editorTextFocus && editorHasSelection"
         }
       ]
-    }
+    },
+    "keybindings": [{
+      "command": "hackathon-gpt.review",
+      "key": "ctrl+shift+,",
+      "mac": "cmd+shift+,",
+      "when": "editorTextFocus && editorHasSelection"
+    }]
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
